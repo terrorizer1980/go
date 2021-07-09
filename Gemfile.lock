@@ -38,7 +38,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     base32 (0.3.2)
     citrus (3.0.2)
@@ -74,7 +74,7 @@ GEM
     multipart-post (2.1.1)
     net-http-digest_auth (1.4.1)
     netrc (0.11.0)
-    octokit (4.18.0)
+    octokit (4.21.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     pg (0.18.4)
@@ -82,7 +82,7 @@ GEM
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    public_suffix (4.0.5)
+    public_suffix (4.0.6)
     rake (13.0.1)
     rbnacl (7.1.1)
       ffi
@@ -123,11 +123,11 @@ PLATFORMS
 
 DEPENDENCIES
   netrc
-  octokit
+  octokit (>= 4.18.0)
   pry
   rake
   stellar_core_commander!
   xdrgen!
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
