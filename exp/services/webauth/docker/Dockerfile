@@ -5,7 +5,7 @@ WORKDIR /src/webauth
 RUN go build -o /bin/webauth ./exp/services/webauth
 
 
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20201014
 
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY --from=build /bin/webauth /app/
