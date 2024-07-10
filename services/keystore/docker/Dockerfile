@@ -5,7 +5,7 @@ WORKDIR /src/keystore
 RUN go build -o /bin/keystored ./services/keystore/cmd/keystored
 
 
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20201014
 
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ADD ./services/keystore/migrations/ /app/migrations/
