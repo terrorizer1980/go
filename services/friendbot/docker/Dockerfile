@@ -4,7 +4,7 @@ ADD . /src/friendbot
 WORKDIR /src/friendbot
 RUN go build -o /bin/friendbot ./services/friendbot
 
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20201014
 
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY --from=build /bin/friendbot /app/
