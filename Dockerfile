@@ -1,4 +1,4 @@
-FROM golang:1.14
+FROM golang:1.25rc1
 WORKDIR /go/src/github.com/stellar/go
 
 COPY . .
